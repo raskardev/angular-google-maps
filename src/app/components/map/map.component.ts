@@ -28,6 +28,12 @@ export class MapComponent implements OnInit {
     this.saveStorage();
   }
 
+  deleteMarker(i: number) {
+    this.markers.splice(i, 1);
+
+    this.saveStorage();
+  }
+
   saveStorage() {
     localStorage.setItem('markers', JSON.stringify(this.markers));
   }
