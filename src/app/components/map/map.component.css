@@ -1,3 +1,12 @@
 agm-map {
   height: 600px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin: 0 0.5rem;
+}
